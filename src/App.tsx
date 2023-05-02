@@ -73,7 +73,7 @@ function App() {
         if (!item || metaData === undefined || !name) {
           alert('Please fill in all the options')
         } else {
-          setCommandString(`give @p sign 1 0 {BlockEntityTag:{Text1:"{\\"text\\":\\"Click to Order\\",\\"clickEvent\\":{\\"action\\":\\"run_command\\",\\"value\\":\\"give @p minecraft:${item} 1 ${metaData} {display:{Name:\\\\\\"${name}\\\\\\",Lore:[\\\\\\"Wonder's Finest Cuisine\\\\\\"]}}\\"}}",Text2:"{\\"text\\":\\"${name}\\",\\"color\\":\\"dark_blue\\",\\"bold\\":true}\\""},display:{Name:"${name} Sign"}}`)
+          setCommandString(`give @p sign 1 0 {BlockEntityTag:{Text1:"{\\"text\\":\\"Click to Order\\",\\"clickEvent\\":{\\"action\\":\\"run_command\\",\\"value\\":\\"give @p minecraft:${item} 1 ${metaData} {display:{Name:\\\\\\"${name}\\\\\\",Lore:[\\\\\\"Wonder's Finest Cuisine\\\\\\"]}}\\"}}",Text2:"{\\"text\\":\\"${name}\\",\\"color\\":\\"blue\\",\\"bold\\":true}\\""},display:{Name:"${name} Sign"}}`)
         }
 
       }}>Generate command</button>
