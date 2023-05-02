@@ -8,7 +8,7 @@ function App() {
   const [name, setName] = useState("");
   const [metaData, setMetaData] = useState(0);
   const [commandString, setCommandString] = useState("");
-  const [suggestions, setSuggestions] = useState([]);
+  const [suggestions, setSuggestions] = useState<any[]>([]);
 
   const handleInputChange = (e: { target: { value: string; }; }) => {
     const inputValue = e.target.value;
